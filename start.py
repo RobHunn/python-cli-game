@@ -37,7 +37,7 @@ def z():
     print(stories[selected_story].generate(ans))
     if selected_story in stories:
         del stories[selected_story]
-    again = input("Play A again?   ")
+    again = input("Type 'yes' to play again   ")
     if again.lower() == 'yes':
         z()
     else:
