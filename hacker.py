@@ -2,6 +2,11 @@ from PIL import Image, ImageDraw, ImageFont
 import math
 import argparse
 
+# This file i got from:  Raphson
+# https://www.youtube.com/watch?v=2fZBLPk-T2Y&list=LL19PJgf0W2Eq6lV-QVnDt2A&index=3&t=917s
+# did some minor tweaks...
+
+# grab command line arguments
 parser = argparse.ArgumentParser(
     description="Turn any photo into ascii art from the Command Line."
 )
@@ -14,11 +19,10 @@ parser.add_argument(
     help='The name of the file to save the png and text output. Eg - img1. Optional (default is "output")',
 )
 
+# convert parser.parse_args() SimpleNamespace to dictionary.
+# Remove keys with value of None.
 args = {k: v for k, v in vars(parser.parse_args()).items() if v != None}
 
-# This file i got from:  Raphson
-# https://www.youtube.com/watch?v=2fZBLPk-T2Y&list=LL19PJgf0W2Eq6lV-QVnDt2A&index=3&t=917s
-# did some minor tweaks...
 chars = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^`'. "[::-1]
 
 charArray = list(chars)
