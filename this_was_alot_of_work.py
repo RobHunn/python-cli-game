@@ -44,7 +44,8 @@ def logo():
                                                                                                                         
                                                                                                                         
 def designed_by():
-    print("                                         ----------------------------")
+    print("                                         --------------------------------")
     print("                                         Designed By Robert Hunnicutt")
-    print("                                         ----------------------------")
+    print("                                         Contributors: Richard Iannucelli")
+    print("                                         --------------------------------")
     print('\n')
