@@ -1,51 +1,57 @@
-def logo(): 
-    print('                                              ')  
-    print('                                              ')                               
-    print("                                                               .|Y")                                                  
-    print("                                                          |XJUUUUU.")                                                 
-    print("                     YYYYYYYYYYYY      UUUYYUUYYYY      .YYYYYYYYY      UYYYYYYYYYYUYY")                              
-    print("                     UUUUUUUUUUUUY    YYUUUUUUUUUU      JUUUUUUUUU.     YUUUUUUUUUUUUUUUz")                           
-    print("                      UUUUUUUUUUUU.   UUUUUUUUUUX       YUUUUUUUUUY      .UUUUUUUUUUUUUUUU")                          
-    print("                        UUUUUUUUUUU  YUUUUUUUUUY       fUUUUUUUUUUU       UUUUUUU  YUUUUUUU")                         
-    print("                         UUUUUUUUUUJ UUUUUUUUUUY       JUUUUXYUUUUU       UUUUUUU   UUUUUUYU")                        
-    print("                         UUUUUUUUUUUjUUUUUUUUUUY       YUUUY UUUUUU       UUUUUUU    UUUUUUU")                        
-    print("                         UUUUUYYUUUUUUUUXUUUUUUY      xUUUU. UUUUUUz      UUUUUUU    UUUUUUU")                        
-    print("                         UUUUU.UUUUUUUUU UUUUUUU      UUUUU  UUUUUUJ      zUUUUUU    UUUUUUU-")                       
-    print("                         UUUUU JUUUUUUUJ UUUUUUU      UUUUUUUUUUUUUU      UUUUUU    UUUUUUUx")                       
-    print("                         UUUUJ  UUUUUUU  JUUUUUJ     YUUUUUUUUUUUUUU,     :UUUUUU    UUUUUUUI")                       
-    print("                         UUUUU  JUUUUUU  UUUUUUJ     UUUUUj`. UUUUUUU      UUUUUU.   JUUUUUU")                        
-    print("                         UUUUJ   JUUUU   JUUUUUU    `UUUU\    .UUUUUU      UUUUUU    UUUUUUU")                        
-    print("                         UUUUU   ,UUUJ   JUUUUUU    UUUUU      JUUUUUJ.    UUUUUU   UUUUUUU~")                        
-    print("                        tUUUUU    UUU'   JUUUUUJ  YUUUUUUUC  JUUUUUUUUUJ  JUUUUUJ  UUUUUUUJ")                         
-    print("                       .UUUUUUC    UJ   .JUUUUUUC UUUUUUUUU  CUUUUUUUUUU CUUUUUUUUUUUUUJUz")                          
-    print("                      JUUUUUUUUU   J'  UUUUUUUUUUJ                      rUUUUUUUUUUUUUJ`")                            
-    print('                      JJUCJUUUUJ       CJJJCLCJUY.                      "vvYvvvxr\_')                                 
-    print("                                        Y  .U .'     ^`..")                                                           
-    print("                     JJJJJJJJJJJJJU   UCY     lJz   +JJJJJJJJJJJJJJU")                                                
-    print("                     JJJJJJJJJJJJJJ  C.          U 'UJJJJJJJJJJJJJJJJUJ   .LJJJJJJJCJJJJJ")                           
-    print("                      ,YJJJJJJJJn   C  UXXUJ  .c  JC  `JJJJJJJJJJJJJJJJY nJJJJJJJJJJJJJJJ")                           
-    print("                        JJJJJJJJ   .J  -Y  C ..C  } C  JJJJJJJ  JJJJJJJJ UJJJJJJUJJJJJJJJ")                           
-    print("                        ICJJJJJJ  C U  ;JCU  .    ~    CJJJJJJ  .JJJJJJJ JJJJJJ    JJJJJ'")                           
-    print("                         JJJJJJJ   UU          J  C    JJJJJJJ  .JJJJJU  CJJJJJY    JJJJ")                            
-    print('                        .JJJJJJJ     U    Q   X..C     CJJJJJJJCJJJJJC.   JJJJJJJz  UU:.')                            
-    print("                         JJJJJJJ      .U'   .  C       JJJJJJJJJJJJJ'     jJJJJJJJC`")                                
-    print('                         JCCCCCC                  .    JCCCCCCCCCCCCCU     .JCCCCCCCU')                               
-    print("                        UCCCCJ[        CCCCCCCCCCL    JCCCCCCJCCCCCCCJ_     JJCCCCCCC'")                             
-    print('                         JJJJJJ"        JJJJJJJJJJC    JJJJJJJ  .JJJJJJJ.    . JJJJJJJCJ')                            
-    print('                         CCCCCC.    CCC .UCCCCCCC      CCCCCCC  .CCCCCCCX      .CCCCCCCCC')                           
-    print("                         CCCCCC.   'CCC   CCCCCCC      CCCCCCC  CCCCCCCC. CCCJ   'CCCCCCC")                           
-    print('                        .CCCCCC>   CCCC   CCCCCCC      CCCCCCCCCCCCCCCCC  CCCJ)   CCCCCCC')                           
-    print('                       >CCCCCCCC.  LCCC   UCCCCCC     LCCCCCCCCCCCCCCCJ   CCCCCCCLCCCCCCC')                           
-    print('                      JCCCCCCCCCCCCCCCC   CCCCCCC    CCCCCCCCCCCCCCCC     CCCCCCCCCCCCCCU')                           
-    print("                      UCJJJCCCCCCCCCCCC CCCCCCCCCCC  CCCCCCCCLLL,.        CCCCCCCCCCCCL`")                            
-    print("                                        vCCCCCCCCCC                       CCCC CCCCCC.C'")                         
-    print('                                             ')                                                                      
-    print('                                              ')                                                                                                                  
-                                                                                                                        
-                                                                                                                        
+def logo():
+    print(
+        """
+
+                                                                          .|Y                     
+                                                                     |XJUUUUU.                    
+                                YYYYYYYYYYYY      UUUYYUUYYYY      .YYYYYYYYY      UYYYYYYYYYYUYY 
+                                UUUUUUUUUUUUY    YYUUUUUUUUUU      JUUUUUUUUU.     YUUUUUUUUUUUUUUUz
+                                 UUUUUUUUUUUU.   UUUUUUUUUUX       YUUUUUUUUUY      .UUUUUUUUUUUUUUUU
+                                   UUUUUUUUUUU  YUUUUUUUUUY       fUUUUUUUUUUU       UUUUUUU  YUUUUUUU
+                                    UUUUUUUUUUJ UUUUUUUUUUY       JUUUUXYUUUUU       UUUUUUU   UUUUUUYU
+                                    UUUUUUUUUUUjUUUUUUUUUUY       YUUUY UUUUUU       UUUUUUU    UUUUUUU
+                                    UUUUUYYUUUUUUUUXUUUUUUY      xUUUU. UUUUUUz      UUUUUUU    UUUUUUU
+                                    UUUUU.UUUUUUUUU UUUUUUU      UUUUU  UUUUUUJ      zUUUUUU    UUUUUUU-
+                                    UUUUU JUUUUUUUJ UUUUUUU      UUUUUUUUUUUUUU      UUUUUU    UUUUUUUx
+                                    UUUUJ  UUUUUUU  JUUUUUJ     YUUUUUUUUUUUUUU,     :UUUUUU    UUUUUUUI
+                                    UUUUU  JUUUUUU  UUUUUUJ     UUUUUj`. UUUUUUU      UUUUUU.   JUUUUUU
+                                    UUUUJ   JUUUU   JUUUUUU    `UUUU\    .UUUUUU      UUUUUU    UUUUUUU
+                                    UUUUU   ,UUUJ   JUUUUUU    UUUUU      JUUUUUJ.    UUUUUU   UUUUUUU~
+                                   tUUUUU    UUU'   JUUUUUJ  YUUUUUUUC  JUUUUUUUUUJ  JUUUUUJ  UUUUUUUJ
+                                  .UUUUUUC    UJ   .JUUUUUUC UUUUUUUUU  CUUUUUUUUUU CUUUUUUUUUUUUUJUz
+                                 JUUUUUUUUU   J'  UUUUUUUUUUJ                      rUUUUUUUUUUUUUJ`"
+                                 JJUCJUUUUJ       CJJJCLCJUY.                      "vvYvvvxr\_    
+                                                   Y  .U .'     ^`..                             
+                                JJJJJJJJJJJJJU   UCY     lJz   +JJJJJJJJJJJJJJU                   
+                                JJJJJJJJJJJJJJ  C.          U 'UJJJJJJJJJJJJJJJJUJ   .LJJJJJJJCJJJJJ
+                                 ,YJJJJJJJJn   C  UXXUJ  .c  JC  `JJJJJJJJJJJJJJJJY nJJJJJJJJJJJJJJJ
+                                   JJJJJJJJ   .J  -Y  C ..C  } C  JJJJJJJ  JJJJJJJJ UJJJJJJUJJJJJJJJ
+                                   ICJJJJJJ  C U  ;JCU  .    ~    CJJJJJJ  .JJJJJJJ JJJJJJ    JJJJJ
+                                    JJJJJJJ   UU          J  C    JJJJJJJ  .JJJJJU  CJJJJJY    JJJJ
+                                   .JJJJJJJ     U    Q   X..C     CJJJJJJJCJJJJJC.   JJJJJJJz  UU:.
+                                    JJJJJJJ      .U'   .  C       JJJJJJJJJJJJJ'     jJJJJJJJC`   
+                                    JCCCCCC                  .    JCCCCCCCCCCCCCU     .JCCCCCCCU  
+                                   UCCCCJ[        CCCCCCCCCCL    JCCCCCCJCCCCCCCJ_     JJCCCCCCC'
+                                    JJJJJJ"        JJJJJJJJJJC    JJJJJJJ  .JJJJJJJ.    . JJJJJJJCJ
+                                    CCCCCC.    CCC .UCCCCCCC      CCCCCCC  .CCCCCCCX      .CCCCCCCCC
+                                    CCCCCC.   'CCC   CCCCCCC      CCCCCCC  CCCCCCCC. CCCJ   'CCCCCCC
+                                   .CCCCCC>   CCCC   CCCCCCC      CCCCCCCCCCCCCCCCC  CCCJ)   CCCCCCC
+                                  >CCCCCCCC.  LCCC   UCCCCCC     LCCCCCCCCCCCCCCCJ   CCCCCCCLCCCCCCC
+                                 JCCCCCCCCCCCCCCCC   CCCCCCC    CCCCCCCCCCCCCCCC     CCCCCCCCCCCCCCU
+                                 UCJJJCCCCCCCCCCCC CCCCCCCCCCC  CCCCCCCCLLL,.        CCCCCCCCCCCCL`
+                                                   vCCCCCCCCCC                       CCCC CCCCCC.C'
+
+"""
+    )
+
+
 def designed_by():
-    print("                                         --------------------------------")
-    print("                                         Designed By Robert Hunnicutt")
-    print("                                         Contributors: Richard Iannucelli")
-    print("                                         --------------------------------")
-    print('\n')
+    print(
+        """
+                                                    --------------------------------
+                                                    Designed By Robert Hunnicutt
+                                                    Contributors: Richard Iannucelli
+                                                    --------------------------------
+
+"""
+    )
