@@ -18,28 +18,41 @@ parser.add_argument(
     type=str,
     help='The name of the file to save the png and text output. Eg - img1. Optional (default is "output")',
 )
-
+parser.add_argument(
+    "--charW",
+    type=int,
+    default=12,
+    help='The width of a single character default=.12',
+)
+parser.add_argument(
+    "--charH",
+    type=int,
+    default=18,
+    help='The height of a single character default=18',
+)
+parser.add_argument(
+    "--scale",
+    type=float,
+    default=.10,
+    help='The scale of image default=.10',
+)
 # convert parser.parse_args() SimpleNamespace to dictionary.
 # Remove keys with value of None.
 args = {k: v for k, v in vars(parser.parse_args()).items() if v != None}
-
+print(args)
 chars = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^`'. "[::-1]
 
 charArray = list(chars)
 charLength = len(charArray)
 interval = charLength / 256
 
-scaleFactor = 0.09
-
-oneCharWidth = 10
-oneCharHeight = 18
 
 
 def getChar(inputInt):
     return charArray[math.floor(inputInt * interval)]
 
 
-def ascii_art(image=None, output="output", output_txt="output"):
+def ascii_art(charW, charH, scale,image=None, output="output", output_txt="output"):
     if not image:
         return
     text_file = open(f"{output}.txt", "w")
@@ -51,8 +64,8 @@ def ascii_art(image=None, output="output", output_txt="output"):
     width, height = im.size
     im = im.resize(
         (
-            int(scaleFactor * width),
-            int(scaleFactor * height * (oneCharWidth / oneCharHeight)),
+            int(scale * width),
+            int(scale * height * (charW / charH)),
         ),
         Image.NEAREST,
     )
@@ -60,7 +73,7 @@ def ascii_art(image=None, output="output", output_txt="output"):
     pix = im.load()
 
     outputImage = Image.new(
-        "RGB", (oneCharWidth * width, oneCharHeight * height), color=(0, 0, 0)
+        "RGB", (charW * width, charH * height), color=(0, 0, 0)
     )
     d = ImageDraw.Draw(outputImage)
 
@@ -71,7 +84,7 @@ def ascii_art(image=None, output="output", output_txt="output"):
             pix[j, i] = (h, h, h)
             text_file.write(getChar(h))
             d.text(
-                (j * oneCharWidth, i * oneCharHeight),
+                (j * charW, i * charH),
                 getChar(h),
                 font=fnt,
                 fill=(r, g, b),
