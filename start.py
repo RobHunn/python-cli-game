@@ -1,5 +1,5 @@
 import argparse
-from this_was_alot_of_work import logo, designed_by
+from logo import logo, designed_by
 from stories import Story,stories
 from random import choice
 from types import SimpleNamespace
