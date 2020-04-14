@@ -11,30 +11,31 @@ parser = argparse.ArgumentParser(
     description="Turn any photo into ascii art from the Command Line."
 )
 parser.add_argument(
-    "image", type=str, help="The image to convert to ascii art. Required."
+    "image", type=str, default=None, help="The image to convert to ascii art. Required."
 )
 parser.add_argument(
     "--output",
     type=str,
+    default='output',
     help='The name of the file to save the png and text output. Eg - img1. Optional (default is "output")',
 )
 parser.add_argument(
     "--charW",
     type=int,
     default=12,
-    help='The width of a single character default=.12',
+    help='The width of a single character Type=int default=12',
 )
 parser.add_argument(
     "--charH",
     type=int,
     default=18,
-    help='The height of a single character default=18',
+    help='The height of a single character Type=Int default=18',
 )
 parser.add_argument(
     "--scale",
     type=float,
     default=.10,
-    help='The scale of image default=.10',
+    help='The scale of image Type=float default=.10',
 )
 # convert parser.parse_args() SimpleNamespace to dictionary.
 # Remove keys with value of None.
@@ -47,12 +48,11 @@ charLength = len(charArray)
 interval = charLength / 256
 
 
-
 def getChar(inputInt):
     return charArray[math.floor(inputInt * interval)]
 
 
-def ascii_art(charW, charH, scale,image=None, output="output", output_txt="output"):
+def ascii_art(charW, charH, scale, image, output, output_txt="output"):
     if not image:
         return
     text_file = open(f"{output}.txt", "w")
